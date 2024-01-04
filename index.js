@@ -1,15 +1,14 @@
-//require -נקרא commonJS modules\
-//import es6 modules
+
 
 import express from "express";
-import courseRouter from "./routes/course.js"
+import songRouter from "./routes/song.js"
 import { connectToDB } from "./db/connectToDb.js"
 
 const app = express();
 app.use(express.json());
 connectToDB();
 
-app.use("/api/course", courseRouter);
+app.use("/api/songs", songRouter);
 
 
 app.listen(3500, () => {
