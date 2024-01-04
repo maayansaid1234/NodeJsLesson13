@@ -76,23 +76,7 @@ export const addSong = async (req, res) => {
     }
 
 }
-// export const updateSong = async (req, res) => {
-//     try {
- 
-//      const updatedSong=req.body;
-//      const id=req.params.id
-    
-//       const result = await SongModel.updateOne(
-//         { _id: id },
-//         { $set: updatedSong } );
-//      if(result)
-//       return res.json(result);
-//        return res.status(404).json({ type: "no Song to update", message: "no Song with such id to update" })
-//     }
-//     catch (err) {
-//         console.log(err)
-//         res.status(400).json({ type: "invalid operation", message: "sorry cannot update Song" })
-//     }}
+
 
 
 
